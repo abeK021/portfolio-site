@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+
+
+console.log(document);
+
+document.onclick = () => applyCursorRippleEffect(event); 
+
+function applyCursorRippleEffect(e) {
+   const ripple = document.createElement("div");
+
+   ripple.className = "ripple";
+   document.body.appendChild(ripple);
+
+  ripple.style.left = `${e.clientX}px`;
+  ripple.style.top = `${e.clientY}px`; 
+
+   ripple.style.animation = "ripple-effect .4s  linear";
+   ripple.onanimationend = () => document.body.removeChild(ripple);
+
+}
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <h1>
+     hello world
+   </h1>
   );
 }
 
