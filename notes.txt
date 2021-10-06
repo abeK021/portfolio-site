@@ -1,0 +1,9 @@
+clickable links 
+  - resume
+  - github
+  -linkedin
+  - email
+
+  in our circle nav bar thing 
+    - about section (bio of myself)
+    - projects 

@@ -1,30 +1,25 @@
+import React, { useState } from "react";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./components/global-styles";
+import { lightTheme, darkTheme } from "./config/Themes";
+import ThemeChangerButton from "./components/theme-changer-button";
+import IconLinks from "./components/links";
 
+const App = () => {
+  const [theme, setTheme] = useState("light");
 
-console.log(document);
+  const handleThemeChange = (theme) => setTheme(theme);
 
-document.onclick = () => applyCursorRippleEffect(event); 
-
-function applyCursorRippleEffect(e) {
-   const ripple = document.createElement("div");
-
-   ripple.className = "ripple";
-   document.body.appendChild(ripple);
-
-  ripple.style.left = `${e.clientX}px`;
-  ripple.style.top = `${e.clientY}px`; 
-
-   ripple.style.animation = "ripple-effect .4s  linear";
-   ripple.onanimationend = () => document.body.removeChild(ripple);
-
-}
-
-
-function App() {
   return (
-   <h1>
-     hello world
-   </h1>
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <>
+        <GlobalStyles />
+        <ThemeChangerButton theme={theme} onThemeChange={handleThemeChange} />
+        <h1>Hello World</h1>
+        <IconLinks theme={theme} />
+      </>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
