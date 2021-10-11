@@ -1,14 +1,23 @@
-import react, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileLines, faGit } from "@fortawesome/free-regular-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faFileLines } from "@fortawesome/free-regular-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import resume from "../documents/Software-Resume.pdf";
-import "./links-component.css";
+import "../styling/links-component.css";
+
+import { Box, BottomNavigation, Paper } from "@mui/material";
 
 const IconLinks = ({ theme }) => {
+  const [value, setValue] = React.useState(0);
+
   return (
-    <>
+    <BottomNavigation
+      sx={theme === "dark" ? { bgcolor: "#363537" } : { bgcolor: "white" }}
+      className={
+        theme === "dark" ? "links-container-dark" : "links-container-light"
+      }
+    >
       <div className="flip">
         <div className="flip-inner">
           <div
@@ -42,7 +51,7 @@ const IconLinks = ({ theme }) => {
           </div>
           <div className="flip-back">
             <a
-              href={resume}
+              href={"https://github.com/abeK021"}
               target="_blank"
               rel="noreferrer"
               className={theme === "dark" ? " dark" : " light"}
@@ -52,7 +61,49 @@ const IconLinks = ({ theme }) => {
           </div>
         </div>
       </div>
-    </>
+      <div className="flip">
+        <div className="flip-inner">
+          <div
+            className={
+              theme === "dark" ? "flip-front dark" : "flip-front light"
+            }
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="lg" />
+          </div>
+          <div className="flip-back">
+            <a
+              href={"https://www.linkedin.com/in/abrahim-esseidi/"}
+              target="_blank"
+              rel="noreferrer"
+              className={theme === "dark" ? " dark" : " light"}
+            >
+              Linkedin
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="flip">
+        <div className="flip-inner">
+          <div
+            className={
+              theme === "dark" ? "flip-front dark" : "flip-front light"
+            }
+          >
+            <FontAwesomeIcon icon={faEnvelope} size="lg" />
+          </div>
+          <div className="flip-back">
+            <a
+              href="mailto:abekaid021@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              className={theme === "dark" ? " dark" : " light"}
+            >
+              <p>Email</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </BottomNavigation>
   );
 };
 

@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
-import { GlobalStyles } from "./components/global-styles";
+import { GlobalStyles } from "./styling/global-styles";
 import { lightTheme, darkTheme } from "./config/Themes";
 import ThemeChangerButton from "./components/theme-changer-button";
 import IconLinks from "./components/links";
+import Heading from "./components/heading";
+import "bootstrap";
 
 const App = () => {
   const [theme, setTheme] = useState("light");
@@ -12,12 +14,10 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-      <>
-        <GlobalStyles />
-        <ThemeChangerButton theme={theme} onThemeChange={handleThemeChange} />
-        <h1>Hello World</h1>
-        <IconLinks theme={theme} />
-      </>
+      <GlobalStyles />
+      <ThemeChangerButton theme={theme} onThemeChange={handleThemeChange} />
+      <Heading />
+      <IconLinks theme={theme} />
     </ThemeProvider>
   );
 };
