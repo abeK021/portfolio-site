@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Istok+Web:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+.date-container {
+  overflow-y: scroll;
+}
+.month-name {
+  padding-left: 10px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  text-transform: uppercase;
+}
+
+.number {
+  text-align: center;
+  margin-top: -25px;
+  font-size: 150px;
+  color: #2d2d2d;
+  font-weight: 700;
+}
+
+.two {
+  width: 150px;
+  height: 150px;
+  background: #222;
+  margin: 100px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.caltwo {
+  position: relative;
+  width: 200px;
+  margin: 100px auto 0 auto;
+  background: #222;
+  text-align: center;
+  color: #eaeaea;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  padding: 10px 0;
+  box-shadow: 1px 7px 7px black;
+  z-index: 1;
+}
+.day-num {
+  font-size: 25px;
+  letter-spacing: 7px;
+  font-weight: 300;
+  margin-bottom: -2px;
+}
+.month {
+  font-size: 16px;
+  font-weight: 400;
+  color: RED;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+}
+.clock {
+  position: relative;
+  width: 150px;
+  height: 30px;
+  background: #eaeaea;
+  margin: 0 auto;
+  line-height: 30px;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(black, 0.2);
+  z-index: 2;
+}
+.time {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-right: -4px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #666;
+  letter-spacing: 5px;
+}
+
+.current-status-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.line-dark {
+  position: relative;
+  top: 12px;
+  height: 2px;
+  width: 40px;
+  background-color: white;
+}
+.line-light {
+  position: relative;
+  top: 12px;
+  height: 2px;
+  width: 40px;
+  background-color: black;
+}

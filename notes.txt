@@ -7,3 +7,12 @@ clickable links
   in our circle nav bar thing 
     - about section (bio of myself)
     - projects 
+
+Components to render 
+  - main
+    - main page 
+  - about  
+    - about me section
+  - projects 
+    - projects section
+        

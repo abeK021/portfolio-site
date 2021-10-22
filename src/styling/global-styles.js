@@ -6,6 +6,7 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
         font-family: "Inter", sans-serif;
     transition: all 0.50s linear;
+    overflow: auto;
 
   }
 `;

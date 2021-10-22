@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faFileLines } from "@fortawesome/free-regular-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-import resume from "../documents/Software-Resume.pdf";
-import "../styling/links-component.css";
+import resume from "../../documents/Software-Resume.pdf";
+import "../../styling/links-component.css";
 
 import { Box, BottomNavigation, Paper } from "@mui/material";
 

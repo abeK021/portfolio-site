@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
+import { UserContext, UserProvider } from "./context-state";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <UserProvider>
     <App />
-  </BrowserRouter>,
+  </UserProvider>,
   document.getElementById("root")
 );
