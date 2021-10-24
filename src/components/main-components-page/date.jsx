@@ -29,7 +29,7 @@ const Date = () => {
       </div>
       <div className="current-status-container">
         <div className={`line-${theme}`}></div>
-        <div classNmae="status-p">available for work</div>
+        <div className="status-p">available for work</div>
         <div className={`line-${theme}`}></div>
       </div>
     </Fade>
