@@ -1,3 +1,4 @@
+import React from "react";
 import { Reveal, Fade } from "react-reveal";
 import "../../styling/projects-btn.css";
 import { Box } from "@mui/system";

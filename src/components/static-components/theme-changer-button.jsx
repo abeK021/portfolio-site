@@ -1,4 +1,4 @@
-import react, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { themeToggler } from "../../utils/utils";
 import DarkModeToggle from "react-dark-mode-toggle";
 import "../../styling/theme-mode-toggler.css";
