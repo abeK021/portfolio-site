@@ -11,8 +11,8 @@ import { useContext } from "react";
 const ProjectsButton = () => {
   const { theme, handleComponentChange } = useContext(UserContext);
   return (
-    <div className="project-btn-container">
-      <Fade right delay={2100}>
+    <Fade right delay={2100}>
+      <div className="project-btn-container">
         <Box
           onClick={() => handleComponentChange("projects")}
           className={`project-btn-container-${theme}`}
@@ -23,8 +23,8 @@ const ProjectsButton = () => {
             </Button>
           </ThemeProvider>
         </Box>
-      </Fade>
-    </div>
+      </div>
+    </Fade>
   );
 };
 

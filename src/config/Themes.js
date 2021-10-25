@@ -1,6 +1,6 @@
 export const lightTheme = {
   overflow: "auto",
-  body: " linear-gradient(#F8F6F0 80%, white 82%)",
+  body: "white",
   text: "#363537",
   toggleBorder: "#FFF",
   background: "#363537",
