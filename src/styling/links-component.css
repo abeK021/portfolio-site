@@ -57,7 +57,7 @@
 .links-container-dark {
   height: 10%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 
   border-top: 2px solid rgba(6, 165, 165, 0.75);
