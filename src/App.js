@@ -8,35 +8,32 @@ import { lightTheme, darkTheme } from "./config/Themes";
 import ThemeChangerButton from "./components/static-components/theme-changer-button";
 import IconLinks from "./components/static-components/links";
 import LandingHomePage from "./components/main-components-page/main-components-index";
+import AboutPage from "./components/about-components-page/about-components-index";
+import ProjectsComponents from "./components/projects-components-page/projects-components-index";
 // context
 import UserContext, { UserProvider } from "./context-state";
 
 const App = () => {
-  const { theme } = useContext(UserContext);
+  const { theme, componentsToRender } = useContext(UserContext);
 
-  const [componentsToRender, setComponentsToRender] = useState("home");
-
-  const handleComponentChange = (type) => {
-    debugger;
-    setComponentsToRender(type);
+  const renderComponents = () => {
+    switch (componentsToRender) {
+      case "home":
+        return <LandingHomePage />;
+      case "about":
+        return <AboutPage />;
+      case "projects":
+        return <ProjectsComponents />;
+      default:
+        return <LandingHomePage />;
+    }
   };
-
-  // const renderComponents = () => {
-  //   switch (componentsToRender) {
-  //     case "test1":
-  //       return <Test1 />;
-  //     case "test2":
-  //       return <Test2 />;
-  //     default:
-  //       return <Heading />;
-  //   }
-  // };
 
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
       <ThemeChangerButton />
-      <LandingHomePage />
+      {renderComponents()}
       <IconLinks theme={theme} />
     </ThemeProvider>
   );

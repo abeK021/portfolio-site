@@ -5,14 +5,15 @@ const UserContext = createContext();
 // exports the context providor to the parent
 export const UserProvider = ({ children }) => {
   const [theme, setTheme] = useState("dark");
-  const [componentsToRender, setComponentsToRender] = useState("main");
+  const [componentsToRender, setComponentsToRender] = useState("home");
+  const [prevComponents, setPrevComponents] = useState("");
 
   const changeTheme = (theme) => {
     setTheme(theme);
   };
 
   const handleComponentChange = (components) => {
-    debugger;
+    setPrevComponents(componentsToRender);
     setComponentsToRender(components);
   };
 
@@ -23,6 +24,7 @@ export const UserProvider = ({ children }) => {
         componentsToRender,
         changeTheme,
         handleComponentChange,
+        prevComponents,
       }}
     >
       {children}
