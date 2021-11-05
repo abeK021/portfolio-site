@@ -18,15 +18,14 @@ const App = () => {
   const { theme, componentsToRender } = useContext(UserContext);
 
   const renderComponents = () => {
-    debugger;
     switch (componentsToRender) {
-      case componentsToRender == "home":
+      case "home":
         return <LandingHomePage />;
-      case componentsToRender == "about":
+      case "about":
         return <AboutPage />;
-      case componentsToRender == "projects":
+      case "projects":
         return <ProjectsComponents />;
-      case componentsToRender == "skills":
+      case "skills":
         return <SkillsComponents />;
       default:
         return <LandingHomePage />;
