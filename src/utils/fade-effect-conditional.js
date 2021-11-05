@@ -5,7 +5,7 @@ import { Fade } from "react-reveal";
 const NavBarFade = ({ children }) => {
   const { componentsToRender, prevComponents } = useContext(UserContext);
 
-  return prevComponents === "home" ? (
+  return prevComponents === "HOME" || prevComponents === "" ? (
     <Fade right> {children}</Fade>
   ) : (
     <Fragment>{children}</Fragment>

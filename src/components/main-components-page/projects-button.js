@@ -14,7 +14,7 @@ const ProjectsButton = () => {
     <Fade right delay={2100}>
       <div className="project-btn-container">
         <Box
-          onClick={() => handleComponentChange("projects")}
+          onClick={() => handleComponentChange("PROJECTS")}
           className={`project-btn-container-${theme}`}
         >
           <ThemeProvider theme={buttonTheme}>

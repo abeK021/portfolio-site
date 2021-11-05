@@ -13,7 +13,7 @@ const AboutMeButton = () => {
   return (
     <Fade left delay={1800}>
       <Box
-        onClick={() => handleComponentChange("about")}
+        onClick={() => handleComponentChange("ABOUT")}
         className={`abt-me-btn-container-${theme}`}
       >
         <ThemeProvider theme={buttonTheme}>

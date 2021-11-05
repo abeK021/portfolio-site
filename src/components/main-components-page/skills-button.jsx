@@ -13,7 +13,7 @@ const MySkillsButton = () => {
   return (
     <Fade left delay={2300}>
       <Box
-        onClick={() => handleComponentChange("skills")}
+        onClick={() => handleComponentChange("SKILLS")}
         className={`skills-btn-container-${theme}`}
       >
         <ThemeProvider theme={buttonTheme}>

@@ -6,7 +6,6 @@ import NavBarFade from "../../utils/fade-effect-conditional";
 //config
 import { navBarArray } from "../../config/nav-bar-vars";
 //npm
-import { Fade } from "react-reveal";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
@@ -28,7 +27,7 @@ const NavTabs = () => {
   const handleChange = (event, newValue) => {
     setValue(newValue);
     const innerText = event.currentTarget.innerText;
-    handleComponentChange(innerText.toLowerCase());
+    handleComponentChange(innerText);
   };
 
   return (

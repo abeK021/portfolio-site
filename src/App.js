@@ -19,13 +19,11 @@ const App = () => {
 
   const renderComponents = () => {
     switch (componentsToRender) {
-      case "home":
-        return <LandingHomePage />;
-      case "about":
+      case "ABOUT":
         return <AboutPage />;
-      case "projects":
+      case "PROJECTS":
         return <ProjectsComponents />;
-      case "skills":
+      case "SKILLS":
         return <SkillsComponents />;
       default:
         return <LandingHomePage />;

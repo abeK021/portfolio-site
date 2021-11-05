@@ -1,1 +1,1 @@
-export const navBarArray = ["home", "about", "projects", "skills"];
+export const navBarArray = ["HOME", "ABOUT", "PROJECTS", "SKILLS"];

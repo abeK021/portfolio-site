@@ -5,7 +5,7 @@ const UserContext = createContext();
 // exports the context providor to the parent
 export const UserProvider = ({ children }) => {
   const [theme, setTheme] = useState("dark");
-  const [componentsToRender, setComponentsToRender] = useState("home");
+  const [componentsToRender, setComponentsToRender] = useState("");
   const [prevComponents, setPrevComponents] = useState("");
 
   const changeTheme = (theme) => {
