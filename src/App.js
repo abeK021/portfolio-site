@@ -10,6 +10,7 @@ import IconLinks from "./components/static-components/links";
 import LandingHomePage from "./components/main-components-page/main-components-index";
 import AboutPage from "./components/about-components-page/about-components-index";
 import ProjectsComponents from "./components/projects-components-page/projects-components-index";
+import SkillsComponents from "./components/skills-components-page/skills-components-index";
 // context
 import UserContext, { UserProvider } from "./context-state";
 
@@ -24,6 +25,8 @@ const App = () => {
         return <AboutPage />;
       case "projects":
         return <ProjectsComponents />;
+      case "skills":
+        return <SkillsComponents />;
       default:
         return <LandingHomePage />;
     }
