@@ -26,8 +26,8 @@ const NavTabs = () => {
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    const innerText = event.currentTarget.innerText;
-    handleComponentChange(innerText);
+    const newComponent = navBarArray[newValue];
+    handleComponentChange(newComponent);
   };
 
   return (

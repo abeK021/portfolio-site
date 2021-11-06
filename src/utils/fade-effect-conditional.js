@@ -8,7 +8,7 @@ const NavBarFade = ({ children }) => {
   return prevComponents === "HOME" || prevComponents === "" ? (
     <Fade right> {children}</Fade>
   ) : (
-    <Fragment>{children}</Fragment>
+    <div>{children}</div>
   );
 };
 
