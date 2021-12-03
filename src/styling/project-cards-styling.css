@@ -2,14 +2,14 @@
   position: absolute;
   right: 0px;
   top: 50%;
-  opacity: 50%;
+  opacity: 0.6;
 }
 
 .arrow-left {
   position: absolute;
   top: 50%;
   margin-left: 0px;
-  opacity: 50%;
+  opacity: 0.6;
 }
 
 /* bounce animation */
