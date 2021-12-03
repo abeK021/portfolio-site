@@ -1,0 +1,146 @@
+.arrow-right {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  opacity: 50%;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 50%;
+  margin-left: 0px;
+  opacity: 50%;
+}
+
+/* bounce animation */
+
+/* right bounce */
+@-webkit-keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  20% {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+}
+@-moz-keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-10px);
+  }
+  60% {
+    transform: translateX(-15px);
+  }
+}
+@keyframes bounceRight {
+  20% {
+    -ms-transform: translateX(10);
+    transform: translateX(10);
+  }
+  40% {
+    -ms-transform: translateX(-4px);
+    transform: translateX(-4px);
+  }
+}
+/* /right bounce */
+
+/* assign bounce */
+.arrow-right {
+  -webkit-animation: bounceRight 1.5s infinite;
+  animation: bounceRight 1.5s infinite;
+  cursor: pointer;
+}
+
+/* left bounce */
+@-webkit-keyframes bounceLeft {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  20% {
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+}
+@-moz-keyframes bounceLeft {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(15px);
+  }
+}
+@keyframes bounceLeft {
+  20% {
+    -ms-transform: translateX(10);
+    transform: translateX(10);
+  }
+  40% {
+    -ms-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+}
+
+.arrow-left {
+  -webkit-animation: bounceLeft 1.5s infinite;
+  animation: bounceLeft 1.5s infinite;
+  cursor: pointer;
+}
+
+.project-1-box {
+  height: 125px;
+  width: 275px;
+  background-color: #fb8b40;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+}
+
+.project-2-box {
+  height: 125px;
+  width: 275px;
+  background-color: #537d8d;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+}
+
+.project-3-box {
+  height: 125px;
+  width: 275px;
+  background-color: #460049;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+}

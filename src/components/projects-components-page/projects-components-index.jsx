@@ -1,14 +1,13 @@
 import React from "react";
 import NavTabs from "../static-components/nav-bar";
 import Fade from "react-reveal";
+import Projects from "./projects";
 
 const ProjectsComponents = () => {
   return (
     <React.Fragment>
       <NavTabs />
-      <Fade bottom>
-        <h1>Projects page</h1>
-      </Fade>
+      <Projects />
     </React.Fragment>
   );
 };
