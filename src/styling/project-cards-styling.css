@@ -118,29 +118,21 @@
   cursor: pointer;
 }
 
-.project-1-box {
+.project-box-light {
   height: 125px;
   width: 275px;
-  background-color: #fb8b40;
+  background-color: #fec10b;
   position: absolute;
   left: -1px;
   top: -1px;
 }
 
-.project-2-box {
+.project-box-dark {
   height: 125px;
   width: 275px;
-  background-color: #537d8d;
+  background-color: #bb86fc;
   position: absolute;
   left: -1px;
   top: -1px;
-}
-
-.project-3-box {
-  height: 125px;
-  width: 275px;
-  background-color: #460049;
-  position: absolute;
-  left: -1px;
-  top: -1px;
+  opacity: 0.65;
 }

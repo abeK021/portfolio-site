@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   body {
@@ -9,4 +9,12 @@ export const GlobalStyles = createGlobalStyle`
     overflow: auto;
 
   }
+ 
+`;
+
+export const HeadingBar = styled.div`
+  background-color: #8;
+  background-color: #81e114;
+  height: 27px;
+  width: 7px;
 `;
