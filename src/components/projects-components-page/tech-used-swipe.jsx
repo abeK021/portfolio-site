@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import {
   Avatar,
   Stack,
@@ -20,6 +20,7 @@ import { HeadingBar } from "../../styling/global-styles";
 import UserContext from "../../context-state";
 
 const TechUsed = ({ collapse, onCollapse, techUsed, activeStep, title }) => {
+  const [showTooltip, setShowTooltip] = useState(false);
   const { theme } = useContext(UserContext);
   return (
     <div hidden={activeStep !== 1}>
@@ -67,10 +68,13 @@ const TechUsed = ({ collapse, onCollapse, techUsed, activeStep, title }) => {
                   title={tech.descriptionToolTip}
                   placement="top-end"
                   arrow
-                  enterTouchDelay={50}
+                  enterTouchDelay={0}
                   leaveTouchDelay={false}
+                  onOpen={() => setShowTooltip(true)}
+                  onClose={() => setShowTooltip(false)}
                 >
                   <Avatar
+                    onCltck={() => setShowTooltip(!showTooltip)}
                     sx={{
                       width: 42,
                       height: 42,

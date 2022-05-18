@@ -30,6 +30,7 @@
 }
 
 .heading-container-light {
+  background-color: white;
   border: 2px solid purple;
   max-width: 85%;
   margin: 0 auto;
