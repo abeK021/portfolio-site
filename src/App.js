@@ -3,8 +3,7 @@ import React, { useState, useEffect, useContext } from "react";
 // theme stuff
 
 const App = () => {
-  return <></>;
+  return <>Hello world</>;
 };
 
 export default App;
-console.log("hello");
