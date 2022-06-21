@@ -1,0 +1,7 @@
+@media screen and (min-width: 764px) {
+  .MuiDivider-root {
+    width: 50%;
+    margin: 0 auto;
+    transform: translate(50%);
+  }
+}

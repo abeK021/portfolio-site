@@ -1,9 +1,16 @@
 // React stuff
-import React, { useState, useEffect, useContext } from "react";
-// theme stuff
+import React from "react";
+// COMPONENTS
+import Heading from "./components/heading/heading.jsx";
+import ScrollableTabs from "./components/nav-tabs/nav-tabs.jsx";
 
 const App = () => {
-  return <>Hello world</>;
+  return (
+    <>
+      <Heading />
+      <ScrollableTabs />
+    </>
+  );
 };
 
 export default App;
