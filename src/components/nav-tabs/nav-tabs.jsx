@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // Material UI
 import Tabs from "@mui/material/Tabs";
@@ -9,6 +9,7 @@ import Divider from "@mui/material/Divider";
 
 // CSS
 import "./nav-tabs.css";
+import { useEffect } from "react";
 
 const StyledTabs = styled((props) => (
   <Tabs
@@ -46,14 +47,32 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
 
 const ScrollableTabs = () => {
   const [value, setValue] = React.useState(0);
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    window.onscroll = function () {
+      if (window.pageYOffset === 0) {
+        setScrolling(false);
+      } else {
+        setScrolling(true);
+      }
+    };
+  }, []);
 
   const handleChange = (e, newValue) => {
     setValue(newValue);
   };
+  const scrollClass = scrolling && "scrolled";
+  const scrollingClass = `nav-tab-container ${scrollClass}`;
 
   return (
-    <Box sx={{ width: "100%" }}>
-      <Box display="flex" alignItems="center" justifyContent="center">
+    <Box sx={{ width: "100%" }} className={scrollingClass}>
+      <Box
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        sx={{ bgcolor: "#2f2f2f" }}
+      >
         <StyledTabs
           value={value}
           onChange={handleChange}

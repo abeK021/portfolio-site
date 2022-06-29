@@ -5,3 +5,14 @@
     transform: translate(50%);
   }
 }
+
+.nav-tab-container {
+  position: relative;
+  transition: position 400ms;
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  transition: position 400ms;
+}
