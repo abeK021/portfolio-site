@@ -5,6 +5,7 @@ import Heading from "./components/1-heading/heading.jsx";
 import ScrollableTabs from "./components/2-nav-tabs/nav-tabs.jsx";
 import Hero from "./components/3-hero/hero.jsx";
 import About from "./components/4-about/about";
+import Projects from "./components/5-projects/projects.jsx";
 
 //NPM MODULES
 import {
@@ -46,6 +47,10 @@ const App = () => {
 
       <Element id="about" name="about">
         <About />
+      </Element>
+
+      <Element id="projects" name="projects">
+        <Projects />
       </Element>
     </>
   );
