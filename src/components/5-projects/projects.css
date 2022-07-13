@@ -1,0 +1,110 @@
+@keyframes transitioninview {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translateY(-10%);
+  }
+
+  100% {
+    transform: translateY(-45%);
+  }
+}
+
+.projects-container {
+  background: #f2f3f4;
+  padding-bottom: 20px;
+}
+
+.code-arrow-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -65px;
+  transform: translateX(20px);
+  max-height: 111px;
+}
+
+.transitioninview {
+  animation-name: transitioninview;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.34, 1.02);
+  animation-fill-mode: forwards;
+}
+
+.svg-wave {
+  width: 100%;
+
+  margin-top: -2px;
+  padding: 0;
+}
+
+.cards-container {
+}
+
+/* Teach used carousal */
+
+/* body {
+  align-items: center;
+  background: #e3e3e3;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+} */
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-150px * 7));
+    transform: translateX(calc(-150px * 7));
+  }
+}
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-150px * 7));
+    transform: translateX(calc(-150px * 7));
+  }
+}
+.slider {
+  background: pr;
+
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 150px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 20s linear infinite;
+  animation: scroll 20s linear infinite;
+  display: flex;
+  width: calc(150px * 14);
+}
+.slider .slide {
+  height: 50px;
+  width: 150px;
+}
