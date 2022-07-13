@@ -15,13 +15,25 @@ const ProjectCard = (props) => {
   const [expand, setExpand] = useState(false);
 
   return (
-    <Card sx={{ marginRight: "20px", overflow: "clip" }} m={10}>
+    <Card
+      sx={{
+        marginRight: "20px",
+        overflow: "clip",
+        borderRadius: "10px",
+        boxShadow:
+          "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
+      }}
+      m={10}
+      className="cards-container"
+    >
       <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        <Typography sx={{ fontSize: 16 }} color="text.secondary" gutterBottom>
           {props.title}
         </Typography>
-        <Collapse variant="body2" collapsedSize={20} in={expand}>
-          {props.overallDescription}
+        <Collapse variant="body2" collapsedSize={45} in={expand}>
+          <Typography sx={{ fontSize: 14 }}>
+            {props.overallDescription}
+          </Typography>
         </Collapse>
         <Avatar
           sx={{

@@ -61,7 +61,7 @@ const Projects = () => {
         enableMouseEvents
       >
         {Object.entries(projects).map(([k, v], i) => {
-          return <ProjectCard {...v} />;
+          return <ProjectCard {...v} key={v.title} />;
         })}
       </SwipeableViews>
     );

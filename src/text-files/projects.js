@@ -14,35 +14,11 @@ const projectsText = {
       },
 
       {
-        id: 2,
-        title: "Styled Components",
-        descriptionToolTip:
-          "Used as a top level component for Theme Provider for Dark/Light theme. Created Global styles for my overall body. Incorparated in Headings and image containers.",
-        url: "/images/logos/styled-components.png",
-      },
-
-      {
-        id: 3,
-        title: "Font Awesome",
-        descriptionToolTip:
-          "Used in my footer links and in conjuncture with icons from Materila UI.",
-        url: "/images/logos/font-awesome.png",
-      },
-
-      {
         id: 4,
         title: "Material UI",
         descriptionToolTip:
           "Used the Material UI styling library for its layout, Cards, Transitions and majority of the styling needs",
         url: "/images/logos/material-ui.png",
-      },
-
-      {
-        id: 5,
-        title: "React Dark Mode",
-        descriptionToolTip:
-          "Theme changer toggle for light/dark mode. Incorporated the theme state using Reacts context hook",
-        url: "/images/logos/dark-mode.png",
       },
 
       {
@@ -55,7 +31,7 @@ const projectsText = {
 
       {
         id: 7,
-        title: "React Swipeable Views",
+        title: "Swipeable Views",
         descriptionToolTip:
           "Used in projects components to create a card swipeable effect.",
         url: "/images/logos/react-swipeable-views.png",
@@ -93,7 +69,7 @@ const projectsText = {
 
       {
         id: 4,
-        title: "React Hook Form",
+        title: "Hook Form",
         descriptionToolTip:
           "Used for form validation in combination with pre molded schemas with Yup",
         url: "/images/logos/hookform-resolvers-logo.png",
