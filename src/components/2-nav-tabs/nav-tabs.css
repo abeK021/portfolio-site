@@ -36,9 +36,9 @@
 .active-tab::after {
   display: inline-block;
   position: absolute;
-  transform: translate(-50px);
+  transform: translate(-60px);
   content: "";
-  width: 60px;
+  width: 80px;
   bottom: 0;
   border-bottom: 4px solid #ff7f50;
 }

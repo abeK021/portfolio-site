@@ -6,6 +6,8 @@ import ScrollableTabs from "./components/2-nav-tabs/nav-tabs.jsx";
 import Hero from "./components/3-hero/hero.jsx";
 import About from "./components/4-about/about";
 import Projects from "./components/5-projects/projects.jsx";
+import Skills from "./components/6-skills/skills.jsx";
+import AtTabs from "./components/07-@-tabs/at-tabs.jsx";
 
 //NPM MODULES
 import {
@@ -52,6 +54,11 @@ const App = () => {
       <Element id="projects" name="projects">
         <Projects />
       </Element>
+
+      <Element id="skills" name="skills">
+        <Skills />
+      </Element>
+      <AtTabs />
     </>
   );
 };

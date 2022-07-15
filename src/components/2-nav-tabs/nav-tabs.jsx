@@ -26,11 +26,21 @@ import { PinDropSharp } from "@mui/icons-material";
 const StyledTab = (props) => (
   <Link
     {...props}
+    isDynamic={true}
     activeClass="active-tab"
     spy={true}
     smooth={true}
     duration={800}
-    offset={props.to === "home" ? -120 : props.to === "about" ? -180 : 0}
+    offset={
+      props.to === "home"
+        ? -120
+        : props.to === "about"
+        ? -200
+        : props.to === "projects"
+        ? -250
+        : -250
+    }
+    spyThrottle={1000}
   >
     {props.label}
   </Link>
