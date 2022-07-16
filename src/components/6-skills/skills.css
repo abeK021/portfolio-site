@@ -1,0 +1,180 @@
+@keyframes skillstransitioninview {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translateY(-55%);
+  }
+}
+
+@keyframes reactjs {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes nodejs {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 40%;
+  }
+}
+@keyframes mongodb {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes javascript {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes css {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .skills-percent {
+    width: 60%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .skills-wave {
+    position: absolute;
+    top: -100px;
+  }
+}
+
+.skills-percent-container {
+  width: 100%;
+  text-align: center;
+}
+
+.skills-wave {
+  position: absolute;
+  width: 100vw;
+  top: -35px;
+  left: 0;
+}
+
+.skillsPercentInView {
+  animation-name: skillstransitioninview;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.34, 1.02);
+  animation-fill-mode: forwards;
+}
+
+.skills-container {
+  position: relative;
+  background: #121212;
+  font: 12px normal Arial;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  color: #fff;
+  max-width: 100vw;
+  padding: 15%;
+  margin: 0 auto;
+}
+
+.skill-list {
+  list-style: none;
+  padding: initial;
+}
+
+.skill-list li {
+  position: relative;
+  margin-bottom: 70px;
+  background: #030303;
+  height: 6px;
+  border-radius: 3px;
+  border-left: 1px solid #111;
+  border-top: 1px solid #111;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.skill-list li em {
+  position: relative;
+  font-style: normal;
+  font-size: 14px;
+  text-align: center;
+  color: #dedede;
+  top: -28px;
+}
+
+.rjs {
+  width: 65%;
+  animation: reactjs 2s ease-out;
+}
+.njs {
+  width: 40%;
+  animation: nodejs 2s ease-out;
+}
+.mgdb {
+  width: 60%;
+  animation: mongodb 2s ease-out;
+}
+.js {
+  width: 80%;
+  animation: javascript 2s ease-out;
+}
+.css {
+  width: 70%;
+  animation: css 2s ease-out;
+}
+
+.blueline {
+  height: 3px;
+  margin: 2px 0;
+  background: #2187e7;
+  position: absolute;
+  box-shadow: 1px 1px 10px 2px rgba(0, 198, 255, 0.6);
+}
+.greenline {
+  height: 3px;
+  margin: 2px 0;
+  background: #9acd32;
+  position: absolute;
+  box-shadow: 1px 1px 10px 2px rgba(173, 255, 47, 0.6);
+}
+.redline {
+  height: 3px;
+  margin: 2px 0;
+  background: #ff4500;
+  position: absolute;
+  box-shadow: 1px 1px 10px 2px rgba(255, 69, 0, 0.8);
+}
+
+.purpleline {
+  height: 3px;
+  margin: 2px 0;
+  background: #c724b1;
+  position: absolute;
+  box-shadow: 1px 1px 10px 2px rgba(255, 69, 0, 0.6);
+}
+
+.orangeline {
+  height: 3px;
+  margin: 2px 0;
+  background: #ffad00;
+  position: absolute;
+  box-shadow: 1px 1px 10px 2px rgba(255, 69, 0, 0.8);
+}
