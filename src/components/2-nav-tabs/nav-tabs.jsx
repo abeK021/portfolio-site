@@ -27,20 +27,26 @@ const StyledTab = (props) => (
   <Link
     {...props}
     isDynamic={true}
-    activeClass="active-tab"
+    activeClass={
+      props.to === "projects"
+        ? "active-tab-projects active-tab-all"
+        : "active-tab-all active-tab"
+    }
     spy={true}
     smooth={true}
     duration={800}
-    offset={
-      props.to === "home"
-        ? -120
-        : props.to === "about"
-        ? -200
-        : props.to === "projects"
-        ? -250
-        : -250
-    }
+    offset={props.to === "home" ? -250 : 0}
+    // offset={
+    //   props.to === "home"
+    //     ? -120
+    //     : props.to === "about"
+    //     ? -150
+    //     : props.to === "projects"
+    //     ? -150
+    //     : -150
+    // }
     spyThrottle={1000}
+    className="nav-tab"
   >
     {props.label}
   </Link>

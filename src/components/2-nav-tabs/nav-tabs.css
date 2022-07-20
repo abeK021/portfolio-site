@@ -29,16 +29,30 @@
   margin: 5px 15px;
 }
 
-.active-tab {
+.nav-tab {
+  cursor: pointer;
+}
+
+.active-tab-all {
   color: white;
 }
 
 .active-tab::after {
   display: inline-block;
   position: absolute;
+  transform: translate(-50px);
+  content: "";
+  width: 60px;
+  bottom: 0;
+  border-bottom: 4px solid #ff7f50;
+}
+
+.active-tab-projects::after {
+  display: inline-block;
+  position: absolute;
   transform: translate(-60px);
   content: "";
-  width: 80px;
+  width: 60px;
   bottom: 0;
   border-bottom: 4px solid #ff7f50;
 }

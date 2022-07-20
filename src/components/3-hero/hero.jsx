@@ -27,8 +27,9 @@ const Hero = () => {
   return (
     <div className="hero-container">
       <Typed
+        showCursor={false}
         strings={[
-          '<span class="console">console</span>.<span class="log">log</span>(<span class="greeting">greeting</span>);',
+          '<div class="typed"><span class="console">console</span>.<span class="log">log</span>(<span class="greeting">greeting</span>);</div>',
         ]}
         typeSpeed={125}
       />
@@ -38,7 +39,7 @@ const Hero = () => {
         </div>
       </Fade>
       <Fade delay={6400} duration={3000}>
-        <div className="greet --2">Welome to my page!</div>
+        <div className="greet --2">Welcome to my page!</div>
       </Fade>
       <Particles
         id="tsparticles"
@@ -51,7 +52,7 @@ const Hero = () => {
             events: {
               onClick: {
                 enable: true,
-                mode: "push",
+                mode: "repulse",
               },
               onHover: {
                 enable: true,

@@ -5,46 +5,51 @@
   color: white;
   font-family: monospace;
 
-  display: flex;
   position: relative;
-  justify-content: center;
-
-  flex-flow: row wrap;
 
   padding-top: 5rem;
 }
 
+.typed {
+  text-align: center;
+  height: 25%;
+}
+
 .console {
-  color: #6298af;
+  color: #a5daf0;
 }
 
 .log {
-  color: #a5a67e;
+  color: #e2e507;
 }
 
 .greeting {
-  color: #6196ac;
-}
-
-.flex-break {
-  flex-basis: 100%;
-  height: 0;
+  color: #a5daf0;
 }
 
 .greet {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding: 2rem;
+
   width: 100%;
   text-align: center;
 }
 
+.--1 {
+  height: 35%;
+}
+
 .--2 {
-  height: 1rem;
-  font-size: 5vw;
-  font-weight: 700;
-  color: #ffdd33;
-  text-align: center;
+  font-family: sans-serif;
+  font-size: 6vw;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  background-image: url("https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .particles {
   position: absolute;

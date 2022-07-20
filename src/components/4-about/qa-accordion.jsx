@@ -30,10 +30,9 @@ const StyledAccordionSummary = (props) => (
       <Typography
         sx={{
           color: "#ff7f50",
-          fontSize: "1.2rem",
-          letterSpacing: "1.5px",
-
-          fontFamily: "Caveat, cursive",
+          fontSize: ".8rem",
+          letterSpacing: "2px",
+          fontWeight: "800",
         }}
         children={props.children}
       />

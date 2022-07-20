@@ -8,6 +8,7 @@ import About from "./components/4-about/about";
 import Projects from "./components/5-projects/projects.jsx";
 import Skills from "./components/6-skills/skills.jsx";
 import AtTabs from "./components/07-@-tabs/at-tabs.jsx";
+import Footer from "./components/08-footer/footer.jsx";
 
 //NPM MODULES
 import {
@@ -59,6 +60,7 @@ const App = () => {
         <Skills />
       </Element>
       <AtTabs />
+      <Footer />
     </>
   );
 };
