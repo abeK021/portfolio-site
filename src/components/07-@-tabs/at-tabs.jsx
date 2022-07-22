@@ -24,7 +24,7 @@ const AtTabs = () => {
       />
 
       <div
-        className="at-circle"
+        className={`at-circle ${expand ? "at-circle-open" : "at-circle-close"}`}
         ref={containerRef}
         onClick={() => setExpand((prev) => !prev)}
       >

@@ -7,6 +7,8 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Collapse from "@mui/material/Collapse";
 import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+
 import { deepOrange, deepPurple } from "@mui/material/colors";
 
 import TechUsed from "./tech-used";
@@ -23,10 +25,11 @@ const ProjectCard = (props) => {
         overflow: "clip",
         borderRadius: "5px",
         boxShadow: "3px 8px 5px  rgba(0, 0, 0, 0.35) ",
+        heigth: "380px",
       }}
       m={10}
     >
-      <CardContent>
+      <CardContent sx={{ height: "100%" }}>
         <Typography sx={{ fontSize: 16 }} color="text.secondary" gutterBottom>
           {props.title}
         </Typography>
@@ -48,6 +51,14 @@ const ProjectCard = (props) => {
         >
           {expand ? "-" : "+"}
         </Avatar>
+        {props.websiteUrl && (
+          <Button
+            onClick={() => props.onClickSiteOpen(props.websiteUrl)}
+            color="secondary"
+          >
+            View Site
+          </Button>
+        )}
         <Typography
           mt={2}
           sx={{ fontSize: 13 }}

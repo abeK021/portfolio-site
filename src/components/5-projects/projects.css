@@ -32,6 +32,16 @@
   }
 }
 
+@keyframes toast {
+  0% {
+    width: 1%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
 .transitioninview {
   animation-name: transitioninview;
   animation-duration: 3s;
@@ -127,4 +137,13 @@
 
 .slide-track {
   height: 80px;
+}
+
+.toast {
+  margin-top: 10px;
+  height: 4px;
+  width: 100%;
+  background: #2187e7;
+  animation: toast 4s reverse linear;
+  box-shadow: 1px 1px 10px 2px rgba(0, 198, 255, 0.6);
 }

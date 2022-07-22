@@ -38,6 +38,80 @@ const projectsText = {
       },
     ],
   },
+  //HALALFINDER------------------------------------------------------------------------------------------------
+
+  halalFinder: {
+    title: "Halal-Finder",
+    overallDescription:
+      "Halal-Finder is a mobile first web app which will give you all the Halal restaurants in a city. On initial load it will retrieve your approximate location based on your ISP provided IP address. The search city input field will autocomplete to provide cities in the  US. We have a map view and a paginated list view. The markers and list items are clickable and on-click we have restaurant details that will populate in the bottom. Each table cell is clickable with a different function.",
+    websiteUrl: "https://halal-finder021.herokuapp.com",
+    techUsed: [
+      {
+        id: 1,
+        title: "React.js",
+        descriptionToolTip: "React as the core library for this project",
+        url: "/images/logos/react.png",
+      },
+      {
+        id: 2,
+        title: "Google Maps Api",
+        descriptionToolTip:
+          "Used Googles API Service to incorparate its Google Maps.",
+        url: "/images/logos/google-maps-logo.png",
+      },
+      {
+        id: 3,
+        title: "Redux",
+        descriptionToolTip:
+          "Utilized Redux for state management in the Front-End.",
+        url: "/images/logos/redux.png",
+      },
+      {
+        id: 4,
+        title: "Axios",
+        descriptionToolTip: "Utilized for CRUD functionality API",
+        url: "/images/logos/axios.png",
+      },
+      {
+        id: 5,
+        title: "Lodash",
+        descriptionToolTip: "Used for its diverse and powerful JS utilities",
+        url: "/images/logos/lodash.png",
+      },
+      {
+        id: 6,
+        title: "Bootstrap",
+        descriptionToolTip: "Bootsrap for majority of the styling needs",
+        url: "/images/logos/bootstrap-logo.png",
+      },
+      {
+        id: 7,
+        title: "MongoDB",
+        descriptionToolTip: "Used for its noSQL database",
+        url: "/images/logos/mongodb.png",
+      },
+      {
+        id: 8,
+        title: "Mongoose",
+        descriptionToolTip:
+          "Used as an ODM library to connect to MongoDB through schemas at the application layer. ",
+        url: "/images/logos/mongoose.png",
+      },
+      {
+        id: 9,
+        title: "Express.js",
+        descriptionToolTip:
+          "A Node.js framework that supplies powerful backend utilities",
+        url: "/images/logos/express.png",
+      },
+      {
+        id: 10,
+        title: "Node.js",
+        descriptionToolTip: "Node for the runtime environment in the Back-End.",
+        url: "/images/logos/node.png",
+      },
+    ],
+  },
 
   //CLOSR------------------------------------------------------------------------------------------------
 
@@ -142,80 +216,6 @@ const projectsText = {
         title: "Jest",
         descriptionToolTip: "Library for TDD unit testing",
         url: "/images/logos/jest.png",
-      },
-    ],
-  },
-
-  //HALALFINDER------------------------------------------------------------------------------------------------
-
-  halalFinder: {
-    title: "Halal-Finder",
-    overallDescription:
-      "Halal-Finder  is a mobile first web application that populates a map from a verified database with markers of all the nearby restaurants in thata searched locality.",
-    techUsed: [
-      {
-        id: 1,
-        title: "React.js",
-        descriptionToolTip: "React as the core library for this project",
-        url: "/images/logos/react.png",
-      },
-      {
-        id: 2,
-        title: "Google Maps Api",
-        descriptionToolTip:
-          "Used Googles API Service to incorparate its Google Maps.",
-        url: "/images/logos/google-maps-logo.png",
-      },
-      {
-        id: 3,
-        title: "Redux",
-        descriptionToolTip:
-          "Utilized Redux for state management in the Front-End.",
-        url: "/images/logos/redux.png",
-      },
-      {
-        id: 4,
-        title: "Axios",
-        descriptionToolTip: "Utilized for CRUD functionality API",
-        url: "/images/logos/axios.png",
-      },
-      {
-        id: 5,
-        title: "Lodash",
-        descriptionToolTip: "Used for its diverse and powerful JS utilities",
-        url: "/images/logos/lodash.png",
-      },
-      {
-        id: 6,
-        title: "Bootstrap",
-        descriptionToolTip: "Bootsrap for majority of the styling needs",
-        url: "/images/logos/bootstrap-logo.png",
-      },
-      {
-        id: 7,
-        title: "MongoDB",
-        descriptionToolTip: "Used for its noSQL database",
-        url: "/images/logos/mongodb.png",
-      },
-      {
-        id: 8,
-        title: "Mongoose",
-        descriptionToolTip:
-          "Used as an ODM library to connect to MongoDB through schemas at the application layer. ",
-        url: "/images/logos/mongoose.png",
-      },
-      {
-        id: 9,
-        title: "Express.js",
-        descriptionToolTip:
-          "A Node.js framework that supplies powerful backend utilities",
-        url: "/images/logos/express.png",
-      },
-      {
-        id: 10,
-        title: "Node.js",
-        descriptionToolTip: "Node for the runtime environment in the Back-End.",
-        url: "/images/logos/node.png",
       },
     ],
   },

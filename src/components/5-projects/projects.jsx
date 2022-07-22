@@ -3,6 +3,8 @@ import React, { useRef, useState, useEffect } from "react";
 // npm modules
 import SwipeableViews from "react-swipeable-views";
 import { Grid } from "@mui/material";
+import Snackbar from "@mui/material/Snackbar";
+import Alert from "@mui/material/Alert";
 
 // Media
 import codeArrows from "../../media/code-arrows.svg";
@@ -21,11 +23,23 @@ import "./projects.css";
 import projects from "../../text-files/projects.js";
 
 const Projects = () => {
-  const ref = useRef(null);
+  const [open, setOpen] = React.useState(false);
+  const [redirectSite, setRedirectSite] = useState("");
 
+  const ref = useRef(null);
   const isInView = useIsInViewport(ref);
 
   const [dimensions, setDimensions] = useState(window.innerWidth);
+
+  const handleSiteOpen = (siteUrl) => {
+    setRedirectSite(siteUrl);
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    setOpen(false);
+    window.open(redirectSite, "_blank");
+  };
 
   useEffect(() => {
     function handleResize() {
@@ -49,7 +63,7 @@ const Projects = () => {
         {Object.entries(projects).map(([k, v], i) => {
           return (
             <Grid key={k} item xs={12} sm={6} md={4}>
-              <ProjectCard {...v} />
+              <ProjectCard {...v} onClickSiteOpen={handleSiteOpen} />
             </Grid>
           );
         })}
@@ -61,13 +75,32 @@ const Projects = () => {
         enableMouseEvents
       >
         {Object.entries(projects).map(([k, v], i) => {
-          return <ProjectCard {...v} key={v.title} />;
+          return (
+            <ProjectCard
+              {...v}
+              key={v.title}
+              onClickSiteOpen={handleSiteOpen}
+            />
+          );
         })}
       </SwipeableViews>
     );
 
   return (
     <div className="projects-container">
+      <Snackbar
+        open={open}
+        autoHideDuration={4000}
+        onClose={handleClose}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+      >
+        <Alert onClose={handleClose} severity="info" sx={{ width: "100%" }}>
+          Site will load in 10 seconds. Heroku free tier sleeps the server on
+          inactivity.
+          <div className="toast"></div>
+        </Alert>
+      </Snackbar>
+
       <img src={aboutWave} alt="svg wave" className="svg-wave" />
 
       <div className="code-arrow-container">

@@ -1,3 +1,21 @@
+@keyframes rotateForward {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateBackward {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
 .at-container {
   display: flex;
   position: fixed;
@@ -30,6 +48,14 @@
   border-radius: 50%;
   background: purple;
   cursor: pointer;
+}
+
+.at-circle-open {
+  animation: rotateForward 1s;
+}
+
+.at-circle-close {
+  animation: rotateBackward 1s;
 }
 
 .flip {
