@@ -38,7 +38,7 @@ const Projects = () => {
 
   const handleClose = (event, reason) => {
     setOpen(false);
-    window.open(redirectSite, "_blank");
+    window.open(redirectSite, "_blank").focus();
   };
 
   useEffect(() => {
