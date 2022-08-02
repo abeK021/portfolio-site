@@ -31,14 +31,14 @@ const Hero = () => {
         strings={[
           '<div class="typed"><span class="console">console</span>.<span class="log">log</span>(<span class="greeting">greeting</span>);</div>',
         ]}
-        typeSpeed={125}
+        typeSpeed={80}
       />
-      <Fade left delay={4900} duration={1200}>
+      <Fade left delay={3800} duration={1200}>
         <div className="greet --1">
           Hello, <br /> I engineer solutions to problems through software.
         </div>
       </Fade>
-      <Fade delay={6400} duration={3000}>
+      <Fade delay={5000} duration={3000}>
         <div className="greet --2">Welcome to my page!</div>
       </Fade>
       <Particles
