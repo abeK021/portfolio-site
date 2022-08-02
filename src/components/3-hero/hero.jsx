@@ -33,12 +33,12 @@ const Hero = () => {
         ]}
         typeSpeed={80}
       />
-      <Fade left delay={3800} duration={1200}>
+      <Fade left delay={3400} duration={1200}>
         <div className="greet --1">
           Hello, <br /> I engineer solutions to problems through software.
         </div>
       </Fade>
-      <Fade delay={5000} duration={3000}>
+      <Fade delay={4700} duration={3000}>
         <div className="greet --2">Welcome to my page!</div>
       </Fade>
       <Particles
