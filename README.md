@@ -2,6 +2,8 @@
 
 A site to view my projects, a little about me, showcase my skills and links to contact me.
 
+[View Live Site ](https://www.abrahimesseidi.com)
+
 ## Tech 
 
   - React
