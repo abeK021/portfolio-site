@@ -10,6 +10,7 @@ A site to view my projects, a little about me, showcase my skills and links to c
   - react-tsparticles
 -react-scroll
 - react-typed
+- Netlify
 
 
 ## Code excerpt 
